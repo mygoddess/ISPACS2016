@@ -21,7 +21,7 @@ else {
 
 function download(URL, Folder_Name, File_Name) {
 //step to request a file system 
-    alert('doanload state');
+    alert('download state');
 	window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, fileSystemSuccess, fileSystemFail);
 
 function fileSystemSuccess(fileSystem) {
