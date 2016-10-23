@@ -11,10 +11,10 @@
 <script src="js/phonegap.js"></script>
 <script type="text/javascript">
 
-function loadURL(url){
-    navigator.app.loadUrl(url, { openExternal:true });
-    return false;
-} 
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    window.open = cordova.InAppBrowser.open;
+}
 </script>
 </head>
 
