@@ -2,6 +2,7 @@
 function DownloadFile(URL, Folder_Name, File_Name) {
 //Parameters mismatch check
 if (URL == null && Folder_Name == null && File_Name == null) {
+	alert('Parameter Not Complete');
     return;
 }
 else {
@@ -9,6 +10,7 @@ else {
     //checking Internet connection availablity
     var networkState = navigator.connection.type;
     if (networkState == Connection.NONE) {
+		alert('Connection NONE');
         return;
     } else {
         download(URL, Folder_Name, File_Name); //If available download function call
