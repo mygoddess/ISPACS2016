@@ -8,9 +8,9 @@ if (URL == null && Folder_Name == null && File_Name == null) {
 else {
 	alert('Start Download ' + URL);
     //checking Internet connection availablity
-	alert('Connection Type' + navigator.connection.type);
+	alert('Connection Type' + Connection.NONE);
     var networkState = navigator.connection.type;
-    if (networkState === Connection.NONE) {
+    if (networkState == 'none') {
 		alert('Connection NONE');
         return;
     } else {
