@@ -10,7 +10,7 @@ else {
     //checking Internet connection availablity
 	alert('Connection Type' + navigator.connection.type);
     var networkState = navigator.connection.type;
-    if (networkState == Connection.NONE) {
+    if (networkState === Connection.NONE) {
 		alert('Connection NONE');
         return;
     } else {
