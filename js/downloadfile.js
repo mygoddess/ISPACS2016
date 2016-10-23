@@ -5,6 +5,7 @@ if (URL == null && Folder_Name == null && File_Name == null) {
     return;
 }
 else {
+	alert('Start Download ' + URL);
     //checking Internet connection availablity
     var networkState = navigator.connection.type;
     if (networkState == Connection.NONE) {
@@ -18,11 +19,13 @@ else {
 
 function download(URL, Folder_Name, File_Name) {
 //step to request a file system 
-    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, fileSystemSuccess, fileSystemFail);
+    alert('doanload state');
+	window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, fileSystemSuccess, fileSystemFail);
 
 function fileSystemSuccess(fileSystem) {
+	alert('');
     var download_link = encodeURI(URL);
-    ext = download_link.substr(download_link.lastIndexOf('.') + 1); //Get extension of URL
+    var ext = download_link.substr(download_link.lastIndexOf('.') + 1); //Get extension of URL
 
     var directoryEntry = fileSystem.root; // to get root path of directory
     directoryEntry.getDirectory(Folder_Name, { create: true, exclusive: false }, onDirectorySuccess, onDirectoryFail); // creating folder in sdcard
