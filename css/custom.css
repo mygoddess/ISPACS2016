@@ -1,0 +1,58 @@
+/* CSS Document */
+body {
+    background: url(../img/background.png);
+    background-repeat:no-repeat;
+    /*background-position:center center;*/
+    background-attachment:scroll;
+    background-size:100%;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+
+.nopadding{
+    padding:1px !important;
+}
+
+.center {
+	text-align: center;		
+}
+
+.all-logo {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px; 
+	text-align: center;	
+}
+ul {
+  overflow: auto;  
+}
+
+li {
+  white-space: nowrap;
+}
+.verticalli{
+	display:table-cell;	
+}
+table.ui-responsive{
+	width:100%;
+	border-collapse: collapse;
+}
+thead, .tdhead {
+	background-color: #4CAF50;	
+}
+th {
+	background-color: #2050BF;	
+	font-size:10px;	
+}
+.smallfont {
+	font-size:8px;	
+}
+tbody tr:nth-child(even){background-color: #252525}
+td {
+	font-size:10px;	
+	border: 1px solid;
+}

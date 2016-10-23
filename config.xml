@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.coepsu.ispacs2016"
+    versionCode = "101"
+    version     = "1.0.1" >
+
+<!-- versionCode is optional and Android only -->
+
+  <name>ISPACS2016</name>
+
+  <description>
+      The 2016 International Symposium on Intelligent Signal Processing and Communication Systems (IEEE Conference Record Number #37442).
+  </description>
+
+  <author href="https://ispacs2016.psu.ac.th" email="ispacs2016@coe.psu.ac.th">
+      ISPACS 2016 Secretariat
+  </author>
+  <icon src="img/icon.png" />
+  <!-- gap:plugin name="org.apache.cordova.inappbrowser" /-->
+  <!--plugin name="org.apache.cordova.inappbrowser" spec="0.6.0" source="pgb" />
+<feature name="InAppBrowser">
+    <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+</feature>
+<feature name="InAppBrowser">
+    <param name="ios-package" value="CDVInAppBrowser" />
+</feature-->
+  
+</widget>
