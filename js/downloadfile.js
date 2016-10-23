@@ -8,11 +8,13 @@ if (URL == null && Folder_Name == null && File_Name == null) {
 else {
 	alert('Start Download ' + URL);
     //checking Internet connection availablity
+	alert('Connection Type' + navigator.connection.type);
     var networkState = navigator.connection.type;
     if (networkState == Connection.NONE) {
 		alert('Connection NONE');
         return;
     } else {
+		alert('go to download');
         download(URL, Folder_Name, File_Name); //If available download function call
     }
   }
