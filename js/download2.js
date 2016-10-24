@@ -4,7 +4,7 @@ var URL_proceeding = "http://ispacs2016.psu.ac.th/pdf/ISPACS2016-Proceeding.pdf"
 var statusDom;
 var filesys;
 function downloadProceeding(){
-	downloadFile("http://ispacs2016.psu.ac.th/pdf/ISPACS2016-Proceeding.pdf");
+	downloadFile("http://ispacs2016.psu.ac.th/pdf/testispacs.pdf");
 }
 
 function downloadFile(URL) {
