@@ -6,15 +6,11 @@ if (URL == null && Folder_Name == null && File_Name == null) {
     return;
 }
 else {
-	alert('Start Download ' + URL);
-    //checking Internet connection availablity
-	alert('Connection Type' + navigator.connection.type);
     var networkState = navigator.connection.type;
-    if (networkState == 'none') {
+    if (networkState === Connection.NONE) {
 		alert('Connection NONE');
         return;
     } else {
-		alert('go to download');
         download(URL, Folder_Name, File_Name); //If available download function call
     }
   }
@@ -23,7 +19,7 @@ else {
 
 function download(URL, Folder_Name, File_Name) {
 //step to request a file system 
-    alert('download state');
+    alert('Download Start...');
 	window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, fileSystemSuccess, fileSystemFail);
 
 function fileSystemSuccess(fileSystem) {
