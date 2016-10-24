@@ -1,6 +1,9 @@
 var folderName = 'coeispacs';
 var fileName;
-
+var URL_proceeding = "http://ispacs2016.psu.ac.th/pdf/ISPACS2016-Proceeding.pdf";
+function downloadProceeding(){
+	downloadFile("http://ispacs2016.psu.ac.th/pdf/ISPACS2016-Proceeding.pdf");
+}
 function downloadFile(URL) {
     //step to request a file system 
     window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, fileSystemSuccess, fileSystemFail);
@@ -18,11 +21,13 @@ function downloadFile(URL) {
 
         fp = fp + "/" + folderName + "/" + fileName; // fullpath and name of the file which we want to give
         // download function call
+		alert("Save Path : " + fp);
         filetransfer(download_link, fp);
     }
 
     function onDirectorySuccess(parent) {
         // Directory created successfuly
+		//alert("Directory Successfull");
     }
 
     function onDirectoryFail(error) {
@@ -33,7 +38,7 @@ function downloadFile(URL) {
 
     function fileSystemFail(evt) {
         //Unable to access file system
-        alert(evt.target.error.code);
+        alert("File Syatem Fail" + evt.target.error.code);
     }
 }
 
