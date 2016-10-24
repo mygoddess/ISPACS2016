@@ -2,9 +2,9 @@ var inAppBrowserRef;
  
 function showHelp(url) {
  
-    var target = "_blank";
+    var target = "_system";
  
-    var options = "location=yes,hidden=yes";
+    var options = "location=no,hidden=yes";
  
     inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
  

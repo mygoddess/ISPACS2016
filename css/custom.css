@@ -38,9 +38,10 @@ li {
 	display:table-cell;	
 }
 table.ui-responsive{
-	width:100%;
+	width:inherit;
 	border-collapse: collapse;
 }
+
 thead, .tdhead {
 	background-color: #4CAF50;	
 }
@@ -50,6 +51,9 @@ th {
 }
 .smallfont {
 	font-size:6px;	
+}
+.scroll{
+	overflow:auto;	
 }
 tbody tr:nth-child(even){background-color: #252525}
 td {

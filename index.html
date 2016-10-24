@@ -33,12 +33,12 @@ function onDeviceReady() {
       <li><a href="#program" data-transition="slidefade">Program</a></li>
       <li><a href="#keynotes" data-transition="slidefade">Keynote Speakers</a></li>
       <li><a href="#attendees" data-transition="slidefade">Attendees</a></li>
-
+      <li><a href="#proceeding" data-transition="slidefade">Proceeding</a></li>
       <li><a href="#floorplan" data-transition="slidefade">Floor Plan</a></li>
       <li><a href="#emergency" data-transition="slidefade">Emergency Phone Numbers</a></li>
     </ul>
 	<div class="all-logo" style="background:#FFFFFF">
-    	<img src="img/Prince_of_Songkla_University_Emblem.png" height="140" alt=""/><img src="img/CoE-BG_sm.png" height="80" alt=""/><img src="img/ECTI_logo.jpg" height="80" alt=""/><br /><img src="img/IEEE_logo.png" height="60" alt=""/><img src="img/ieeethailand.png" height="60" alt=""/><br /><img src="img/eic.png" height="60" alt=""/><br>
+    	<img src="img/Prince_of_Songkla_University_Emblem.png" height="140" alt=""/><img src="img/CoE-BG_sm.png" height="80" alt=""/><img src="img/ECTI_logo.jpg" height="80" alt=""/><br /><img src="img/IEEE_logo.png" height="60" alt=""/><img src="img/ieeethailand.png" height="60" alt=""/><br /><img src="img/eic.png" height="40" alt=""/><br>
 <img src="img/cropped.jpg" height="60" alt=""/><img src="img/TCEBLogo.png" height="60" alt=""/><img src="img/PKRU.png" height="60" alt=""/><br>
 <img src="img/hqbanneron.jpg" height="30" alt=""/>
     </div>
@@ -131,10 +131,7 @@ Schedule: 9.45-10.30 a.m. 26 October 2016</strong><br><br>
               <li><a href="#day-27" data-transition="slidfade">27</a></li>
             </ul>
           </div>
-          <div id="day-24">
-<form>
-    <input id="filterTable-input-24" data-type="search">
-</form>            
+          <div id="day-24" class="scroll">         
 <table data-filter="true"  id="movie-table-24" data-input="#filterTable-input-24" class="ui-responsive smallfont" >
 <thead>
 <tr>
@@ -178,15 +175,12 @@ Schedule: 9.45-10.30 a.m. 26 October 2016</strong><br><br>
 </tbody>
 </table>
           </div>
-          <div id="day-25">
-            <form>
-    <input id="filterTable-input-25" data-type="search">
-</form>            
+          <div id="day-25" class="scroll">
+             
 <table data-filter="true"  id="movie-table-25" data-input="#filterTable-input-25" class="ui-responsive smallfont" >
 <thead>
 <tr>
 <td colspan="6">Tuesday, October 25, 2016</td>
-<td></td>
 </tr>
 <tr>
 <td></td>
@@ -226,7 +220,6 @@ Schedule: 9.45-10.30 a.m. 26 October 2016</strong><br><br>
 <tr>
 <td>10:30 – 10:40</td>
 <td colspan="5">Break at Foyer</td>
-<td></td>
 </tr>
 <tr>
 <td></td>
@@ -268,7 +261,6 @@ Schedule: 9.45-10.30 a.m. 26 October 2016</strong><br><br>
 <tr>
 <td>14:20 – 14:40</td>
 <td colspan="5">Break at Foyer</td>
-<td></td>
 </tr>
 <tr>
 <td></td>
@@ -298,15 +290,12 @@ Schedule: 9.45-10.30 a.m. 26 October 2016</strong><br><br>
 </tbody>
 </table>
           </div>
-          <div id="day-26">
-<form>
-    <input id="filterTable-input-26" data-type="search">
-</form>            
+          <div id="day-26" class="scroll">
+          
 <table data-filter="true"  id="movie-table-26" data-input="#filterTable-input-26" class="ui-responsive smallfont">
 <thead>
 <tr>
-<td colspan="5">Wednesday, October 26, 2016</td>
-<td></td>
+<td colspan="6">Wednesday, October 26, 2016</td>
 <td></td>
 </tr>
 <tr>
@@ -417,10 +406,8 @@ Information Forum</td>
 </tbody>
 </table>
           </div>
-          <div id="day-27">
-<form>
-    <input id="filterTable-input-27" data-type="search">
-</form>            
+          <div id="day-27" class="scroll">
+           
 <table data-filter="true"  id="movie-table-27" data-input="#filterTable-input-27" class="ui-responsive smallfont" >
 <thead>
 <tr>
@@ -1188,7 +1175,8 @@ Information Forum</td>
   <div data-role="header" data-add-back-btn="true">
     <h1>Proceeding</h1>
   </div>
-  <div data-role="content"><p>http://ispacs2016.psu.ac.th/pdf/ISPACS2016-Proceeding.pdf</p>
+  <div data-role="content"><p><a data-role="button" onClick="downloadProceeding('http://ispacs2016.psu.ac.th/pdf/ISPACS2016-Proceeding.pdf')">Download</a></p>
+  <div id="status" class="scroll"></div>
   </div>
   <div data-role="footer">
     <h4>ISPACS2016, Phuket, Thailand</h4>
