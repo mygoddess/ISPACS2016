@@ -2,7 +2,7 @@ var inAppBrowserRef;
  
 function showHelp(url) {
  
-    var target = "_system";
+    var target = "_self";
  
     var options = "location=no,hidden=yes";
  

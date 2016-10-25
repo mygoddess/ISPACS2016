@@ -4,7 +4,7 @@ var URL_proceeding = "http://ispacs2016.psu.ac.th/pdf/ISPACS2016-Proceeding.pdf"
 var statusDom;
 var filesys;
 function downloadProceeding(){
-	downloadFile("http://ispacs2016.psu.ac.th/pdf/testispacs.pdf");
+	downloadFile("http://ispacs2016.psu.ac.th/pdf/ISPACS2016-Proceeding.pdf");
 }
 
 function downloadFile(URL) {
@@ -20,11 +20,11 @@ function downloadFile(URL) {
         
 		var directoryEntry = fileSystem.root; // to get root path of directory
         filesys = fileSystem;
-		directoryEntry.getDirectory(folderName, {
+		/*directoryEntry.getDirectory(folderName, {
             create: true,
             exclusive: false
         }, onDirectorySuccess, onDirectoryFail); // creating folder in sdcard
-		
+		*/
     }
 
     function onDirectorySuccess(parent) {

@@ -21,6 +21,15 @@ body {
 	text-align: center;		
 }
 
+.alert {
+    border-radius: 25px;
+    border: 2px solid #FF3333;
+    padding: 20px; 
+	text-align: center;	
+	background-color:#E5E5E5;
+	color:#FF3333;
+	font-size:1em;
+}
 .all-logo {
     border-radius: 25px;
     border: 2px solid #73AD21;
